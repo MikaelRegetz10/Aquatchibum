@@ -1,0 +1,248 @@
+@import url('https://fonts.googleapis.com/css2?family=Bagel+Fat+One&family=League+Spartan:wght@100..900&family=Lexend+Deca:wght@100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Lexend Deca", sans-serif;
+    text-decoration: none;
+}
+
+body {
+    background-color: #000000;
+    color: #FFFFFF;
+    background-image: linear-gradient(to right, #7BFBFF, #FFFFFF);
+}
+
+#navbar {
+    position: fixed;
+    top: 0;
+    max-height: 30px;
+    width: 100%;
+    display: flex;
+    padding: 30px;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-self: center;
+    background-color: #E43D82;
+    background-image: linear-gradient(to bottom, #E43D82, #e95c97);
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    box-shadow: 0 15px 1px #228936;
+
+    z-index: 2;
+}
+
+#navbar a {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+#navbar img {
+    margin-top: 60px;
+    align-self: center;
+    max-height: 120px;
+}
+
+#navbar ul { 
+    list-style: none;
+    display: flex;
+    gap: 3rem;
+    align-items: center;
+    font-size: 18px;
+    font-family: "Baloo Bhaijaan 2", sans-serif;
+}
+
+.navbar-item {
+    position: relative;
+    padding: 10px;
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.navbar-item.active::after {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #FFFFFF;
+}
+
+.metedologia-content {
+    padding: 90px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px; 
+}
+
+.metedologia-content .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container-middle {
+    display: flex;
+    justify-content: space-around;
+    height: 80%;
+}
+
+.container img {
+    display: block;
+    width: 190px;
+    height: 190px;
+    margin-bottom: 30px;
+    margin-top: -80px;
+}
+
+.container .content {
+    background-color: #FFFFFF;
+    color: #000000;
+    width: 360px;
+    height: 180px;
+    border-radius: 10px;
+    border: 2px #FCB72D solid;
+    box-shadow: 5px 5px #FCB72D;
+    text-align: center;
+    font-size: 17px;    
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main .title {
+    padding: 50px;
+    font-size: 60px;
+    color: #E43D82;
+    font-weight: bold;
+    text-shadow: 1px 1px 3px rgb(92, 89, 89);
+}
+
+#carrossel {
+    position: relative;
+    z-index: -1;
+    box-shadow: 5px 5px #ff0202;
+}
+
+.carousel-inner {
+    height: 600px;
+}
+
+.sobrenos-content {
+    padding: 40px;
+    margin: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.sobrenos-content .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #FFBC3E;
+    width: 250px;
+    height: 250px;
+    border-radius: 40% 20% / 10% 40%;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+.sobre-nos {
+    height: 650px;
+    background-image: url("/assets/image/borda_sobrenos.png");
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: contain;
+}
+
+.sobrenos-content img {
+    max-width: 110px;
+    max-height: 110px;
+}
+
+.sobrenos-content .container p {
+    text-align: center;
+    font-size: 28px;
+    font-weight: bold;
+    color: #1165B1;
+}
+
+.tia-gi, .tia-mayra {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.tia-mayra{
+    padding-top: 100px;
+}
+
+
+.box-title {
+    display: flow-root;
+    position: relative; /* Necessário para posicionar .box-shadow em relação a .box-title */
+    width: 300px;
+    height: 75px;
+    background-color: #FFFFFF;
+    border: solid #000000 2px;
+    border-radius: 15px;
+}
+
+.box-shadow {
+    position: absolute;
+    top: 50%; 
+    left: 50%;
+    transform: translate(-50%, -0%); 
+    z-index: -1; 
+    
+    border-radius: 15px;
+    border: solid #000000 2px;
+
+    width: 330px; 
+    height: 55px; 
+    background-color: #FCB72D;
+
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+
+.tia-gi .box-title h3{
+    padding: 3px;
+    font-size: 55px;
+    text-align: center;
+    font-family: "Bagel Fat One", system-ui;
+    color: #228936;
+    text-shadow: 1px 1px 3px rgb(48, 46, 46);
+    z-index: 2;
+}
+
+.tia-mayra .box-title h3{
+    padding: 3px;
+    font-size: 50px;
+    text-align: center;
+    font-family: "Bagel Fat One", system-ui;
+    color: #228936;
+    text-shadow: 1px 1px 3px rgb(48, 46, 46);
+}
+
+.box-title ul{
+    width: 300px;
+    padding: 10px;
+}
+
+.box-title li{
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+
+.nosso-time {
+    height: 650px;
+    background-image: url("/assets/image/borda_cima.png");
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: contain;
+}
