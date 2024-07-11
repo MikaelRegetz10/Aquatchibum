@@ -1,0 +1,9 @@
+#carrossel {
+    position: relative;
+    z-index: -1;
+}
+
+.carousel-inner {
+    height: 630px;
+    margin-bottom: -35px;
+}

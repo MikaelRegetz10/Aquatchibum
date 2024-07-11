@@ -1,0 +1,118 @@
+#sobrenos {
+    position: relative;
+    border-bottom: 10px solid transparent;
+    border-image: linear-gradient(to left, #ffffff, #4152B3) 1;
+    
+}
+
+#sobrenos h2 {
+    color: #1165B1;
+}
+
+.sobrenos-content {
+    padding: 20px;
+    margin: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.sobrenos-content .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #FFBC3E;
+    width: 250px;
+    height: 250px;
+    border-radius: 40% 20% / 10% 40%;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+.sobre-nos {
+    height: 650px;
+    background-image: url("/assets/image/borda_sobrenos.png");
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: contain;
+}
+
+.sobrenos-content img {
+    max-width: 110px;
+    max-height: 110px;
+}
+
+.sobrenos-content .container p {
+    text-align: center;
+    font-size: 28px;
+    font-weight: bold;
+    color: #1165B1;
+}
+
+.tia-gi, .tia-mayra {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 50px;
+}
+
+
+
+
+.box-title {
+    display: flow-root;
+    position: relative; /* Necessário para posicionar .box-shadow em relação a .box-title */
+    width: 300px;
+    height: 75px;
+    background-color: #FFFFFF;
+    border: solid #000000 2px;
+    border-radius: 15px;
+}
+
+.box-shadow {
+    position: absolute;
+    top: 50%; 
+    left: 50%;
+    transform: translate(-50%, -0%); 
+    z-index: -1; 
+    
+    border-radius: 15px;
+    border: solid #000000 2px;
+
+    width: 330px; 
+    height: 55px; 
+    background-color: #FCB72D;
+
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+
+.tia-gi .box-title h3{
+    padding: 3px;
+    font-size: 55px;
+    text-align: center;
+    font-family: "Bagel Fat One", system-ui;
+    color: #228936;
+    text-shadow: 1px 1px 3px rgb(48, 46, 46);
+    z-index: 2;
+}
+
+.tia-mayra .box-title h3{
+    padding: 3px;
+    font-size: 50px;
+    text-align: center;
+    font-family: "Bagel Fat One", system-ui;
+    color: #228936;
+    text-shadow: 1px 1px 3px rgb(48, 46, 46);
+}
+
+.box-title ul{
+    width: 300px;
+    padding: 10px;
+}
+
+.box-title li{
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+

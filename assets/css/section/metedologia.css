@@ -1,0 +1,59 @@
+#metedologia {
+    background-image: url("/assets/image/borda-baixo.png");
+    background-repeat: no-repeat;
+    background-position: top;
+}
+
+#metedologia:after {
+    content: "";
+    display: block;
+    width: 80%; /* Ajuste a largura conforme necessário */
+    border-bottom: 2px solid #72e6ea;
+    margin: 0 auto; /* Centraliza a borda */
+}
+
+
+
+.metedologia-content {
+    padding: 90px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px; 
+}
+
+.metedologia-content .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container-middle {
+    display: flex;
+    justify-content: space-around;
+    height: 80%;
+}
+
+.container img {
+    display: block;
+    width: 200px;
+    height: 200px;
+    margin-bottom: 30px;
+    margin-top: -80px;
+}
+
+.container .content {
+    background-color: #FFFFFF;
+    color: #000000;
+    width: 400px;
+    height: 200px;
+    padding: 10px;
+    border-radius: 10px;
+    border: 2px #FCB72D solid;
+    box-shadow: 5px 5px #FCB72D;
+    text-align: center;
+    font-size: 17px;    
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

@@ -1,0 +1,60 @@
+#servicos{
+    padding: 50px;
+    /*background-color: #805a9d;
+    background-image: linear-gradient(to right, #805a9d, #6d438c);
+    background-color: #4152B3;*/
+    background-image: linear-gradient(to right, #4152B3, #3b4db5);
+}
+
+#servicos .title{
+    color: #FFFFFF;
+    background-color:rgba(255, 255, 255, 0.3);
+    width: 220px;
+    padding: 10px 10px;
+    border-top-right-radius: 80px 80px;
+    border-bottom-right-radius: 80px 80px;
+    display: inline-block;
+}
+
+.produtos-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 80px;
+}
+
+.produtos-container .content{
+    width: 300px;
+    height: 380px;
+    background-color: #bac7ff;
+
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+}
+
+.produtos-container .content h3{
+    color: #FFFFFF;
+    text-align: center;
+    padding: 20px;
+    font-weight: bold;
+}
+
+
+.personal{
+    width: 75px;
+    height: 75px;
+    margin-top: -130px;
+}
+
+.pais-filhos{
+    margin-top: -80px;
+}
+
+.small-group{
+    margin-top: -150px ;
+}
+
