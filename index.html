@@ -1,88 +1,138 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aquatchibum</title>
     <link rel="stylesheet" href="assets/css/style.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 </head>
+
 <body>
     <header>
-        <nav id="navbar">
-            <ul>
-                <li><a href="#home" class="navbar-item active">Home</a></li>
-                <li><a href="#metedologia" class="navbar-item">Metedologias</a></li>
-                <li><a href="#sobrenos" class="navbar-item">Sobre nós</a></li>
-            </ul>
-            <img src="assets/image/logo.png" alt="logo" id="logo">
-            <ul>
-                <li><a href="#servicos" class="navbar-item">Serviços</a></li>
-                <li><a href="#agenda" class="navbar-item">Agendas e preços</a></li>
-                <li><a href="#contato" class="navbar-item">Contatos</a></li>
-            </ul>
+        <nav class="navbar navbar-expand-lg fixed-top" id="navbar">
+            <div class="container">
+                <a href="#" class="navbar-brand">
+                    <img src="assets/image/logo.png" alt="logo" id="logo-650">
+                </a>
+                <button class="navbar-toggler shadow-none border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            
+                <div class="sidebar offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header text-white border-bottom">
+                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Aquatchibum</h5>
+                        <button type="button" class="btn-close btn-close-white shadow-none" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+            
+                    <div class="offcanvas-body p-1">
+                        <ul class="navbar-nav justify-content-start fs-5 flex-grow-1 me-1">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            </li>
+                            <li class="nav-item mx-1">
+                                <a class="nav-link" href="#metodologia">Metodologia</a>
+                            </li>
+                            <li class="nav-item mx-1">
+                                <a class="nav-link" href="#agenda">Agenda e preços</a>
+                            </li>
+                        </ul>
+                        <div class="image-container">
+                            <img src="assets/image/logo.png" alt="Central Image" class="central-image">
+                        </div>
+                        <ul class="navbar-nav justify-content-end fs-5 flex-grow-1 ms-1" id="ul-bottomn">
+                            <li class="nav-item mx-1">
+                                <a class="nav-link" href="#servicos">Serviços</a>
+                            </li>
+                            <li class="nav-item mx-1">
+                                <a class="nav-link" href="#sobrenos">Sobre nós</a>
+                            </li>
+                            <li class="nav-item mx-1">
+                                <a class="nav-link" href="#contatos">Contatos</a>
+                            </li>
+                        </ul>
+                        <script src="assets/js/active.js"></script>
+                    </div>
+                </div>
+            </div>
+            
         </nav>
-        <script src="assets/js/active.js"></script>
+        
+        
     </header>
-    
+
     <main id="content">
         <section id="home">
             <div id="carrossel" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner">
-                    <div class="carousel-item h-100 active" style="background-image: url(assets/image/carrossel/1.png);  background-repeat: no-repeat; background-position: center; background-size: contain">
+                    <div class="carousel-item h-100 active"
+                        style="background-image: url(assets/image/carrossel/1.png);  background-repeat: no-repeat; background-position: center; background-size: contain">
                     </div>
-                    <div class="carousel-item h-100" style="background-image: url(assets/image/carrossel/2.png); background-repeat: no-repeat; background-position: center; background-size: contain">
+                    <div class="carousel-item h-100"
+                        style="background-image: url(assets/image/carrossel/2.png); background-repeat: no-repeat; background-position: center; background-size: contain">
                     </div>
-                    <div class="carousel-item h-100" style="background-image: url(assets/image/carrossel/3.png);  background-repeat: no-repeat; background-position: center; background-size: contain">
+                    <div class="carousel-item h-100"
+                        style="background-image: url(assets/image/carrossel/3.png);  background-repeat: no-repeat; background-position: center; background-size: contain">
                     </div>
-                    <div class="carousel-item h-100" style="background-image: url(assets/image/carrossel/4.png);  background-repeat: no-repeat; background-position: center; background-size: contain">
+                    <div class="carousel-item h-100"
+                        style="background-image: url(assets/image/carrossel/4.png);  background-repeat: no-repeat; background-position: center; background-size: contain">
                     </div>
-                    <div class="carousel-item h-100" style="background-image: url(assets/image/carrossel/alunos.png);  background-repeat: no-repeat; background-position: center; background-size: contain">
+                    <div class="carousel-item h-100"
+                        style="background-image: url(assets/image/carrossel/alunos.png);  background-repeat: no-repeat; background-position: center; background-size: contain">
                     </div>
                 </div>
-              </div>
+            </div>
         </section>
 
-        <section id="metedologia">
+        <section id="metodologia">
             <h2 class="title">METODOLOGIAS:</h2>
             <div class="metedologia-content">
                 <div class="container">
                     <img src="assets/image/metedologia_baby.png" alt="baby">
                     <div class="content">
-                        <p>Adaptação ao meio líquido, flutuação, submersão com/sem auxílio, propulsão de pernas e deslocamento no meio líquido, movimentos rudimentares de respiração, braços e pernas.</p>
+                        <p>Adaptação ao meio líquido, flutuação, submersão com/sem auxílio, propulsão de pernas e
+                            deslocamento no meio líquido, movimentos rudimentares de respiração, braços e pernas.</p>
                     </div>
                 </div>
                 <div class="container-middle"><img src="assets/image/borda.png" alt="borda"></div>
                 <div class="container">
                     <img src="assets/image/metedologia_adaptacao.png" alt="adaptação" class="stylization-image">
                     <div class="content">
-                        <p>Coordenação de submersão e respiração, deslocamento no meio líquido, flutuação dorsal e ventral, movimentos básicos de crawl e costas e saltos com/sem auxílio.</p>
+                        <p>Coordenação de submersão e respiração, deslocamento no meio líquido, flutuação dorsal e
+                            ventral, movimentos básicos de crawl e costas e saltos com/sem auxílio.</p>
                     </div>
                 </div>
 
                 <div class="container">
                     <img src="assets/image/metedologia_iniciacao.png" alt="iniciação">
                     <div class="content">
-                        <p>Propulsão de perna de crawl e costas, adaptação do movimento de cambalhota, aprimorar crawl e costas e movimentos básicos de peito e borboleta.</p>
+                        <p>Propulsão de perna de crawl e costas, adaptação do movimento de cambalhota, aprimorar crawl e
+                            costas e movimentos básicos de peito e borboleta.</p>
                     </div>
 
                 </div>
-                <div class="container-middle"><img src="assets/image/borda.png" alt="borda" ></div>
+                <div class="container-middle"><img src="assets/image/borda.png" alt="borda"></div>
                 <div class="container">
                     <img src="assets/image/metedologia_aperfeicoamento.png" alt="aperfeiçoamento">
                     <div class="content">
-                        <p>Deslocamento submerso com/sem apneia, aprimorar os 4 estilos, educativoscom movimentos unilaterais dos 4 estilos e de respiração lateral, coordenar braçada e pernadas de diferentes estilos, educativos de virada olímpica esequência do medley.</p>
+                        <p>Deslocamento submerso com/sem apneia, aprimorar os 4 estilos, educativoscom movimentos
+                            unilaterais dos 4 estilos e de respiração lateral, coordenar braçada e pernadas de
+                            diferentes estilos, educativos de virada olímpica esequência do medley.</p>
                     </div>
 
                 </div>
-            </div>    
-        
+            </div>
+
         </section>
 
         <section id="sobrenos">
             <div class="sobre-nos">
                 <h2 class="title">SOBRE NÓS:</h2>
-                <div class="sobrenos-content"> 
+                <div class="sobrenos-content">
                     <div class="container">
                         <img src="assets/image/estrela_rosa.png" alt="estrela rosa">
                         <p>Fundada <br> no ano <br>de 2022</p>
@@ -134,23 +184,29 @@
                 <div class="content">
                     <img src="assets/image/personal.png" alt="personal" class="personal">
                     <h3>PERSONAL</h3>
-                    <p>Aulas personalizadas e individuais de acordo com as necessidades de cada aluno e dentro das especificidades a serem trabalhadas dentro dos objetivos propostos para cada aula.</p>    
+                    <p>Aulas personalizadas e individuais de acordo com as necessidades de cada aluno e dentro das
+                        especificidades a serem trabalhadas dentro dos objetivos propostos para cada aula.</p>
                 </div>
                 <div class="content">
                     <img src="assets/image/pais-filhos.png" alt="pais e filhos" class="pais-filhos">
                     <h3>AULAS SIMULTÃNEAS PAIS-FILHOS</h3>
-                    <p>Neste modelo, disponibilizamos dois professores para reger aulas simultâneas para os pais e os filhos ao mesmo tempo, com o objetivo de otimizar o tempo. Sujeito a disponibilidade de vagas e de horário de nossa equipe.</p>
+                    <p>Neste modelo, disponibilizamos dois professores para reger aulas simultâneas para os pais e os
+                        filhos ao mesmo tempo, com o objetivo de otimizar o tempo. Sujeito a disponibilidade de vagas e
+                        de horário de nossa equipe.</p>
                 </div>
                 <div class="content">
                     <img src="assets/image/small-group.png" alt="small group" class="small-group">
                     <h3>SMALL GROUP</h3>
-                    <p>Aulas coletivas para um grupo de alunos. Respeitando o limite de no mínimo 3 alunos e no máximo 5 alunos por turma. Neste modelo são trabalhadas as especificidades dos nados dentro do desenvolvimento coletivo dos alunos, de acordo com o seu processo de aprendizagem.</p>
+                    <p>Aulas coletivas para um grupo de alunos. Respeitando o limite de no mínimo 3 alunos e no máximo 5
+                        alunos por turma. Neste modelo são trabalhadas as especificidades dos nados dentro do
+                        desenvolvimento coletivo dos alunos, de acordo com o seu processo de aprendizagem.</p>
                 </div>
             </div>
         </section>
 
         <section id="agenda">
             <h2 class="title">AGENDA E PREÇOS</h2>
+            <h3 class="sub-title">Personal</h3>
             <div class="precos-container">
                 <div class="content">
                     <h3>3X POR <br>SEMANA</h3>
@@ -190,15 +246,49 @@
                 </div>
             </div>
 
+            <div class="residencial">
+                <h3 class="sub-title-miami">Residencial Miami Beach (Taguatinga)</h3>
+                <span class="dias-title">TERÇAS E <br><span class="quinta">QUINTAS</span></span>
+                
+                <div class="conteudo">
+                    <aside class="imagem-lateral"><img src="assets/image/dia_noite.png" alt="dia e noite"></aside>
+                    <div class="tipos-aulas-container">
+                        <div class="dia">
+                            <ul class="horario-aulas">
+                                <li class="aula"><p>09h ás 09h45 - Iniciação <br> (<span> +13 anos </span>)</p></li>
+                                <li class="aula"><p>09h50 ás 10h35 - Adaptação 1 <br> (<span> 7 - 12 anos </span>)</p></li>
+                                <li class="aula"><p>10h40 ás 11h25 - Bêbê <br> (<span> 4 - 6 anos </span>)</p></li>
+                            </ul>
+                        </div>
+                        <div class="matricule">
+                            <a href="">MATRICULE-SE AQUI</a>
+                        </div>
+                        <div class="noite">
+                            <ul class="horario-aulas">
+                                <li class="aula"><p>17h ás 17h45 - Adaptação 1 <br> (<span> +13 anos </span>)</p></li>
+                                <li class="aula"><p>18h ás 18h45 - Adaptação 2 <br> (<span> 7 - 12 anos </span>)</p></li>
+                                <li class="aula-ultimo"><p>19h ás 19h45 - Bêbê <br> (<span> 4 - 6 anos </span>)</p></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            
+            </div>
         </section>
     </main>
-    
-    <footer>
-        
+
+    <footer id="contatos">
     </footer>
-    
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+        integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>

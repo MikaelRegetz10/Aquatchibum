@@ -14,12 +14,15 @@
     box-sizing: border-box;
     font-family: "Lexend Deca", sans-serif;
     text-decoration: none;
+    /*border: 1px solid red;*/
 }
 
 body {
     background-color: #000000;
     color: #FFFFFF;
     background-image: linear-gradient(to right, #7BFBFF, #FFFFFF);
+    background-repeat: no-repeat;
+    overflow-x: hidden;
 }
 
 
@@ -34,4 +37,27 @@ main .title {
 }
 
 
+@media screen and (max-width: 640px) {
 
+    
+    main .title {
+        display: inline-block;
+        padding: 17px;
+        font-size: 30px;
+        color: #E43D82;
+        font-weight: bold;
+        text-shadow: 1px 1px 3px rgb(92, 89, 89);
+    }
+}
+
+
+@media screen and (min-width: 1007px){
+    main .title {
+        display: inline-block;
+        padding: 40px;
+        font-size: 50px;
+        color: #E43D82;
+        font-weight: bold;
+        text-shadow: 1px 1px 3px rgb(92, 89, 89);
+    }
+}
