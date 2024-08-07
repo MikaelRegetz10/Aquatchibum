@@ -5,7 +5,7 @@
 @import './section/sobrenos.css';
 @import './section/servicos.css';
 @import './section/agenda_precos.css';
-
+@import './section/contatos.css';
 
 
 * {
@@ -29,8 +29,8 @@ body {
 
 main .title {
     display: inline-block;
-    padding: 50px;
-    font-size: 60px;
+    padding: 3.125rem;
+    font-size: 3.75rem;
     color: #E43D82;
     font-weight: bold;
     text-shadow: 1px 1px 3px rgb(92, 89, 89);
@@ -42,8 +42,8 @@ main .title {
     
     main .title {
         display: inline-block;
-        padding: 17px;
-        font-size: 30px;
+        padding: 1.063rem;
+        font-size: 1.875rem;
         color: #E43D82;
         font-weight: bold;
         text-shadow: 1px 1px 3px rgb(92, 89, 89);
@@ -54,8 +54,8 @@ main .title {
 @media screen and (min-width: 1007px){
     main .title {
         display: inline-block;
-        padding: 40px;
-        font-size: 50px;
+        padding: 2.5rem;
+        font-size: 3.125rem;
         color: #E43D82;
         font-weight: bold;
         text-shadow: 1px 1px 3px rgb(92, 89, 89);

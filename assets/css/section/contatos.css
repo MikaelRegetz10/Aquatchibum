@@ -1,0 +1,227 @@
+#contatos{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-around;
+    background-image: url('/assets/image/background-contatos-2.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: bottom;
+    position: relative; 
+    z-index: 1;
+}
+
+.informacoes{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1.563rem;
+    margin: 3.125rem;
+}
+
+.empresa-celular{
+    display: none;
+}
+
+.infos {
+    background-color: #FFFFFF;
+    width: 390px;
+    height: 60px;
+    margin-bottom: 15px;
+    border-radius: 50px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    
+    display: flex;
+    align-items: center;
+    padding: 0.313rem;
+    position: relative;
+}
+
+.infos i {
+    font-size: 30px;
+    position: absolute;
+    left: 0.938rem; /* Ajuste a posição do ícone conforme necessário */
+    border-radius: 15px;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+#insta{
+    color: #FFFFFF;
+    background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+}
+
+#whatsapp{
+    background-color: #25D366;
+    color: #FFFFFF;
+    
+}
+
+.balao {
+    background-color: rgb(240, 41, 150);
+    width: 400px;
+    height: 150px;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1.25rem;
+    position: relative;
+    margin-bottom: 80px;
+}
+
+.balao::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 5%;
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+    border-bottom-right-radius: 15px;
+    background-color: rgba(0, 150, 255, 0.7);
+    transform: translate(-10px, -10px) skewX(-10deg);
+    z-index: -1;
+
+    -webkit-box-shadow: 17px 30px 22px -1px rgba(0,0,0,0.57);
+    -moz-box-shadow: 17px 30px 22px -1px rgba(0,0,0,0.57);
+    box-shadow: 17px 30px 22px -1px rgba(0,0,0,0.57);
+
+}
+
+
+
+.balao span{
+    font-size: 1.5rem;
+    text-align: center;
+    color: #FFFFFF;
+    font-weight: bold;
+
+}
+
+
+.infos span{
+    font-size: 1.563rem;
+    font-weight: bold;
+    margin: 0 auto; /* Centraliza o texto horizontalmente */
+}
+
+.infos .residencial{
+    font-size: 1.375rem;
+}
+
+
+.empresa{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 3.125rem;
+}
+
+.logo-aquatchibum{
+    max-width: 500px;
+    max-height: 100px;
+    margin-top: 5rem;
+    margin-bottom: 1.25rem;
+}
+
+.texto-bem-vindo{
+    font-size: 1.5rem;
+    width: 300px;
+    text-align: center;
+    color: #106CBF; 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+@media screen and (max-width: 1007px){
+    #contatos{
+        background-image: url('/assets/image/background-empresa-celular.png');    
+        background-size: cover;
+        flex-wrap: wrap-reverse;
+    }
+
+}
+
+
+@media screen and (max-width: 640px){
+
+    #contatos{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-image: url('/assets/image/background-empresa-celular.png');    
+        padding: 6.25rem;
+        background-size: cover;
+    }
+
+
+
+    .empresa{
+        display: none;
+    }
+
+
+    .balao {
+        width: 240px;
+        height: 120px;
+        padding: 1.25rem;
+        margin-bottom: 1.875rem;
+    }
+    
+    .balao::before {
+        left: 6%;
+    }
+    
+    .balao span{
+        font-size: 1.1rem;
+        text-align: center;
+        color: #FFFFFF;
+        font-weight: bold;
+    }
+
+    .infos {
+        width: 240px;
+        height: 60px;
+    }
+    
+    .ultimo{
+        margin-bottom: -8.125rem;
+    }
+
+    .infos i {
+        font-size: 1.2rem;
+        border-radius: 10px;
+        width: 30px;
+        height: 30px;
+
+    }
+
+    .infos span{
+        font-size: 1.1rem;
+    }
+
+    .empresa-celular{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: -6.25rem;
+        
+    }
+
+    .empresa-celular img{
+        margin: 0;
+        margin-bottom: 3.75rem;
+        padding: 0;
+        width: 210px;
+    }
+
+}
+

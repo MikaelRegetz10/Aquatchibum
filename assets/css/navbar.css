@@ -13,7 +13,7 @@
 }
 
 #navbar ul { 
-    font-size: 15px;
+    font-size: 0.938rem;
     font-family: "Baloo Bhaijaan 2", sans-serif;
 }
 
@@ -26,7 +26,7 @@
     justify-content: space-between;
     align-items: center;
     position: relative;
-    padding: 0 10px; /* Ajuste o preenchimento conforme necessário */
+    padding: 0 0.625rem;
 }
 
 .image-container {
@@ -42,15 +42,21 @@
 }
 
 
-
 ul.navbar-nav {
     gap: 2rem;
-    margin: 0 -30px; /* Adiciona margem lateral de 10px às listas */
+    margin: 0 -1.875rem; /* Adiciona margem lateral de 10px às listas */
 }
 
 .nav-link.active {
     border-bottom: 2px solid white;
 }
+
+@media screen and (max-width: 1200px) {
+    .image-container{
+        display: none;
+    }
+}
+
 
 @media screen and (max-width: 991px) {
     #logo-650{
@@ -60,7 +66,7 @@ ul.navbar-nav {
         position: absolute;
         top: 100%;
         left: 5%;
-        margin-top: -50px;
+        margin-top: -3.125rem;
     }
     
     .image-container {
@@ -96,10 +102,8 @@ ul.navbar-nav {
     }
 
     #ul-bottomn{
-        margin-right: 105px;
-        margin-bottom: 120px;
+        margin-right: 6.563rem;
+        margin-bottom: 7.5rem;
         padding: 0;
     }
-
-
 }

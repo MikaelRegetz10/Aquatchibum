@@ -1,13 +1,16 @@
 #servicos{
-    padding: 50px;
+    padding: 3.125rem;
     background-image: linear-gradient(to right, #4152B3, #3b4db5);
+    border-bottom: 10px solid transparent;
+    border-image: linear-gradient(to left, #ffffff, #4152B3) 1;
+    border-top: 10px solid transparent;
 }
 
 #servicos .title{
     color: #FFFFFF;
     background-color:rgba(255, 255, 255, 0.3);
     width: 220px;
-    padding: 10px 10px;
+    padding: 0.625rem  0.625rem;
     border-top-right-radius: 80px 80px;
     border-bottom-right-radius: 80px 80px;
     display: inline-block;
@@ -17,7 +20,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    margin-top: 70px;
+    margin-top: 4.375rem;
 }
 
 .produtos-container .content{
@@ -25,7 +28,7 @@
     height: 380px;
     background-color: #bac7ff;
 
-    padding: 15px;
+    padding: 0.938rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -36,7 +39,7 @@
 .produtos-container .content h3{
     color: #FFFFFF;
     text-align: center;
-    padding: 20px;
+    padding: 1.25rem;
     font-weight: bold;
 }
 
@@ -44,66 +47,92 @@
 .personal{
     width: 75px;
     height: 75px;
-    margin-top: -180px;
+    margin-top: -11.25rem;
 }
 
 .pais-filhos{
-    margin-top: -80px;
+    margin-top: -5rem;
 }
 
 .small-group{
-    margin-top: -120px ;
+    margin-top: -7.5rem;
+}
+
+@media screen and (max-width: 1007px){
+    .produtos-container{
+        flex-direction: column;
+        align-items: center;
+    }
+    .produtos-container .content{
+        width: 480px;
+        height: 450px;
+        margin-bottom: 3rem;
+        padding: 2rem;
+    }
+
+    .produtos-container .content h3{
+        font-size: 2rem;
+    }
+
+    .produtos-container .content p{
+        font-size: 1.5rem;
+    }
+    
+    .small-group{
+        margin-top: -3.5rem;
+    }
 }
 
 @media screen and (max-width: 640px) {
     #servicos{
         margin: 0;
         padding: 0;
+        height: 1250px;
     }
     
     #servicos .title{
         width: 100px;
-        padding: 5px 5px;
-        margin: 20px;
+        padding: 0.313rem 0.313rem;
+        margin: 1.25rem;
     }
     
     .produtos-container{
         flex-direction: column;
         align-items: center;
-        margin-bottom: -100px;
+        margin-bottom: -6.25rem;
     }
     
     .produtos-container .content{
         width: 200px;
         height: 290px;
-        padding: 10px;
-        margin-bottom: 70px;
+        padding: 0.625rem;
+        margin-bottom: 4.375rem;
     }
     
     .produtos-container .content h3{
         color: #FFFFFF;
-        font-size: 18px;
+        font-size: 1.125rem;
         text-align: center;
-        padding: 10px;
+        padding: 0.625rem;
     }
     
     .produtos-container .content p{
-        font-size: 12px;
+        font-size: 0.625rem;
     }
     
     .personal{
         width: 50px;
         height: 50px;
-        margin-top: -130px;
+        margin-top: -8.125rem;
     }
     
     .pais-filhos{
         width: 70px;
-        margin-top: -50px;
+        margin-top: -3.125rem;
     }
     
     .small-group{
         width: 60px;
-        margin-top: -60px ;
+        margin-top: -3.75rem;
     }
 }
