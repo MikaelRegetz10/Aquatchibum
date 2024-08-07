@@ -3,7 +3,7 @@
     justify-content: space-between;
     position: relative; 
     overflow: hidden; 
-    background-image: url('/assets/image/borda-onda.png');
+    background-image: url(../../image/borda-onda.png);
     background-repeat: no-repeat;
     background-size: 100% 50%;
     background-position: center;
@@ -88,7 +88,7 @@
 }
 
 .imagem-lateral {
-    background-image: url(/assets/image/dia_noite.png);
+    background-image: url(../../mage/dia_noite.png);
     height: 900px;
     width: 100%;
     display: block;
@@ -284,7 +284,7 @@
     }
 
     .conteudo {
-        background-image: url("/assets/image/borda-onda-400px.png");
+        background-image: url(../../image/borda-onda-400px.png);
         background-size: contain;
         overflow: visible;
         margin-left: -1.25rem;

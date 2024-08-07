@@ -31,7 +31,7 @@
 
 .sobre-nos {
     height: 650px;
-    background-image: url("/assets/image/borda_sobrenos.png");
+    background-image: url(../../image/borda_sobrenos.png);
     background-repeat: no-repeat;
     background-position: bottom;
     background-size: contain;

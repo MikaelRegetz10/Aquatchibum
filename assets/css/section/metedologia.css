@@ -110,21 +110,21 @@
 }
 
 .metodologia-image.natacao {
-    background-image: url(/assets/image/metedologia_aperfeicoamento.png);
+    background-image: url(../../image/metedologia_aperfeicoamento.png);
     width: 200px;
     height: 200px;
     margin-bottom: -40px;
 }
 .metodologia-image.iniciacao {
-    background-image: url(/assets/image/metedologia_iniciacao.png);
+    background-image: url(../../image/metedologia_iniciacao.png);
 }
 .metodologia-image.adaptacao {
-    background-image: url(/assets/image/metedologia_adaptacao.png);
+    background-image: url(../../image/metedologia_adaptacao.png);
 
 }
 
 .metodologia-image.baby{
-    background-image: url(/assets/image/metedologia_baby.png);
+    background-image: url(../../image/metedologia_baby.png);
 }
 
 
